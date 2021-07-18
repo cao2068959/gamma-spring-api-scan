@@ -18,7 +18,7 @@
 那么基于上述场景，本插件的作用就是用于采集接口信息，然后把采集到的信息发送给对应的服务端。
 
 
-#2 架构设计
+# 2 架构设计
 
 本插件将会扫描对应项目里所有的class文件，然后查找对应的`springMVC`的接口注解
 `@RequestMapping` / `@GetMapping` / `@PostMapping` ...... 等来判断这是不是一个接口
@@ -76,6 +76,7 @@ appName=应用名称(必填)
 # 5.嵌入式执行
 如果不想使用插件这么麻烦，那么可以使用`gamma`的嵌入执行模式来执行
 
+需要先安装`gamma-embed`模块
 ```java
     @org.junit.Test
     public void test() {
